@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import saLogo from "../assests/SALOGO.png";
 
@@ -55,13 +56,29 @@ export function Header() {
             ))}
           </ul>
         </div>
-        <div className="hidden lg:block">
-          <button
-            type="button"
-            className="rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+
+        <div className="hidden lg:flex gap-5">
+          <Link to={"https://nas.io/success-analytics"} target="_blank">
+            <button
+              type="button"
+              className="rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              Enroll As A Student
+            </button>
+          </Link>
+          <Link
+            to={
+              "https://member.nas.io/communities/64b0d0c3c266b471e5def979/home"
+            }
+            target="_blank"
           >
-            Member Portal
-          </button>
+            <button
+              type="button"
+              className="rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              Member Portal
+            </button>
+          </Link>
         </div>
         <div className="lg:hidden">
           <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
@@ -102,12 +119,31 @@ export function Header() {
                     ))}
                   </nav>
                 </div>
-                <button
-                  type="button"
-                  className="mt-4 w-full rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                >
-                  Member Portal
-                </button>
+                <div className="py-3">
+                  <Link to={"https://nas.io/success-analytics"} target="_blank">
+                    <button
+                      type="button"
+                      className="w-full rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    >
+                      Enroll As A Student
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    to={
+                      "https://member.nas.io/communities/64b0d0c3c266b471e5def979/home"
+                    }
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      className="w-full rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    >
+                      Member Portal
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

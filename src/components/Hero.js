@@ -2,6 +2,7 @@ import React from "react";
 import "../typewriter.css";
 
 import { UserCheck2, School, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const listUser = [
   {
@@ -40,12 +41,14 @@ const Hero = () => {
             making education accessible to everyone.
           </p>
           <div className="animate-bounce animate-infinite animate-normal animate-fill-forwards">
-            <button
-              type="button"
-              className="rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Start Learning
-            </button>
+            <Link to={"https://nas.io/success-analytics"} target="_blank">
+              <button
+                type="button"
+                className="rounded-md bg-[#001732] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              >
+                Start Learning
+              </button>
+            </Link>
           </div>
         </div>
         <div className="flex w-full p-10 animate-wiggle animate-infinite">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CourseCard = () => {
   return (
@@ -29,13 +30,15 @@ const CourseCard = () => {
               </span>
             </h1>
           </div>
-          <button
-            type="button"
-            // onClick={() => router.push("/courseDetails")}
-            className="mt-4 w-full rounded-sm bg-[#000] px-2 py-1.5 text-sm font-semibold text-[#fff] shadow-sm hover:bg-[#000]/80"
-          >
-            View Course
-          </button>
+          <Link to="https://nas.io/success-analytics/sveb" target="_blank">
+            <button
+              type="button"
+              // onClick={() => router.push("/courseDetails")}
+              className="mt-4 w-full rounded-sm bg-[#000] px-2 py-1.5 text-sm font-semibold text-[#fff] shadow-sm hover:bg-[#000]/80"
+            >
+              View Course
+            </button>
+          </Link>
         </div>
       </div>
     </div>
