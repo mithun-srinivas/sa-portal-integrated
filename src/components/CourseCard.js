@@ -30,7 +30,7 @@ const CourseCard = () => {
               </span>
             </h1>
           </div>
-          <Link to="https://nas.io/success-analytics/sveb" target="_blank">
+          <Link to="https://sa3051.graphy.com/courses/Industry-Ready-Data-Analytics-Bootcamp-64b559dae4b0ebf3ebc67aa4">
             <button
               type="button"
               // onClick={() => router.push("/courseDetails")}
