@@ -6,6 +6,8 @@ import getScrollAnimation from "./getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 import CourseCard from "./CourseCard";
 
+import comingSoon from "../assests/comingSoon.png";
+
 const LiveCourseSection = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
@@ -31,7 +33,10 @@ const LiveCourseSection = () => {
             {/* <CourseCard />
             <CourseCard />
             <CourseCard /> */}
-            <h1 className="text-3xl font-bold">Coming Soon....</h1>
+            {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
+          </div>
+          <div className="flex justify-center">
+            <img src={comingSoon} alt="coming soon" />
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
