@@ -1,6 +1,8 @@
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 
+import FeaturesImage from "../assests/featuresImage.png";
+
 import getScrollAnimation from "./getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 import { CheckCircle2 } from "lucide-react";
@@ -24,8 +26,8 @@ const Features = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end animate-wiggle animate-infinite animate-normal p-10">
           <motion.div className="w-[100%]" variants={scrollAnimation}>
             <img
-              src="https://sa-web-portal.vercel.app/_next/image?url=%2Fassets%2Fcustom%2Ffeatures.png&w=2048&q=100"
-              alt="VPN Illustrasi"
+              src={FeaturesImage}
+              alt="Features Image"
               className="w-[100%]"
             />
           </motion.div>

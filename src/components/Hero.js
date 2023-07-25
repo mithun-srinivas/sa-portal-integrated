@@ -3,11 +3,12 @@ import "../typewriter.css";
 
 import { UserCheck2, School, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
+import HeroImage from "../assests/heroImage.png";
 
 const listUser = [
   {
     name: "Students Enrolled",
-    number: "3900",
+    number: "2350",
     icon: <UserCheck2 />,
   },
   {
@@ -52,11 +53,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex w-full p-10 animate-wiggle animate-infinite">
-          <img
-            src="https://sa-web-portal.vercel.app/_next/image?url=%2Fassets%2Fcustom%2Fhero-image.png&w=2048&q=100"
-            alt="Hero Image"
-            className="w-[100%]"
-          />
+          <img src={HeroImage} alt="Hero Image" className="w-[100%]" />
         </div>
       </div>
 

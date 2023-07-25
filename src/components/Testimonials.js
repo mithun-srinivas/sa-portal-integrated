@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "./getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
+import Avatar from "../assests/avatar.png";
+
 const Testimonials = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
@@ -34,7 +36,7 @@ const Testimonials = () => {
                   <div class="flex items-center gap-4">
                     <img
                       alt="Man"
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                      src={Avatar}
                       class="h-16 w-16 rounded-full object-cover"
                     />
 
@@ -83,14 +85,17 @@ const Testimonials = () => {
                       </div>
 
                       <p class="mt-1 text-lg font-medium text-gray-700">
-                        Paul Starr
+                        Krishnam Vats
                       </p>
                     </div>
                   </div>
 
                   <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deserunt voluptatem alias ut provident sapiente repellendus.
+                    Shivan really helped me to cut the clutter about how to
+                    proceed with the projects I am looking to build for the
+                    resume. He as usual goes beyond lengths to make sure your
+                    questions are answered. And, he does not mind putting extra
+                    time just to make sure you got the idea right
                   </p>
                 </blockquote>
 
@@ -98,7 +103,7 @@ const Testimonials = () => {
                   <div class="flex items-center gap-4">
                     <img
                       alt="Man"
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                      src={Avatar}
                       class="h-16 w-16 rounded-full object-cover"
                     />
 
@@ -147,14 +152,15 @@ const Testimonials = () => {
                       </div>
 
                       <p class="mt-1 text-lg font-medium text-gray-700">
-                        Paul Starr
+                        Soumen Khatau
                       </p>
                     </div>
                   </div>
 
                   <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deserunt voluptatem alias ut provident sapiente repellendus.
+                    One of the best guider I have . Always blessed to discuss
+                    about any issues with him. He is just absolutely amazing in
+                    terms of guidance and teaching. Thank you so much bhaiya ❤️‍🔥
                   </p>
                 </blockquote>
 
@@ -162,7 +168,7 @@ const Testimonials = () => {
                   <div class="flex items-center gap-4">
                     <img
                       alt="Man"
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                      src={Avatar}
                       class="h-16 w-16 rounded-full object-cover"
                     />
 
@@ -211,14 +217,17 @@ const Testimonials = () => {
                       </div>
 
                       <p class="mt-1 text-lg font-medium text-gray-700">
-                        Paul Starr
+                        Debashish Nandy
                       </p>
                     </div>
                   </div>
 
                   <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deserunt voluptatem alias ut provident sapiente repellendus.
+                    Shivan is a great mentor and possesses good knowledge in his
+                    domain. He is a great listener and always helps with the
+                    problems and doubts I have. He guides me well towards the
+                    solution of the problems. Connecting with him frequently is
+                    helping a lot in achieving my career goal.
                   </p>
                 </blockquote>
               </div>

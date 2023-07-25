@@ -28,9 +28,10 @@ const LiveCourseSection = () => {
       <ScrollAnimationWrapper className="w-full flex flex-col py-4 pb-20">
         <motion.div variants={scrollAnimation}>
           <div className="flex justify-center gap-5 flex-wrap">
+            {/* <CourseCard />
             <CourseCard />
-            <CourseCard />
-            <CourseCard />
+            <CourseCard /> */}
+            <h1 className="text-3xl font-bold">Coming Soon....</h1>
           </div>
         </motion.div>
       </ScrollAnimationWrapper>

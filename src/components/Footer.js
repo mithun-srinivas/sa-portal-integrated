@@ -15,7 +15,8 @@ export function Footer() {
               <div>
                 <p className="mb-4  text-base font-medium">Success Analytics</p>
                 <p className="text-sm text-gray-600">
-                  &copy; Copyright 2023. All Rights Reserved by DevUI.
+                  &copy; Copyright 2023. All Rights Reserved by Success
+                  Analytics.
                 </p>
               </div>
             </div>
@@ -29,33 +30,33 @@ export function Footer() {
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="/"
                   >
-                    Features
+                    Home
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="/about"
                   >
-                    Pricing
+                    About
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="/product"
                   >
-                    Affiliate Program
+                    Product
                   </a>
                 </li>
                 <li>
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="/contact"
                   >
-                    Press Kit
+                    Contact Us
                   </a>
                 </li>
               </ul>
@@ -64,7 +65,7 @@ export function Footer() {
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                Support
+                Social
               </h3>
               <ul>
                 <li className="mb-4">
@@ -72,7 +73,7 @@ export function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     href="#"
                   >
-                    Account
+                    YouTube
                   </a>
                 </li>
                 <li className="mb-4">
@@ -80,7 +81,7 @@ export function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     href="#"
                   >
-                    Help
+                    LinkedIn
                   </a>
                 </li>
                 <li className="mb-4">
@@ -88,7 +89,7 @@ export function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     href="#"
                   >
-                    Contact Us
+                    Instagram
                   </a>
                 </li>
                 <li>
@@ -96,7 +97,7 @@ export function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     href="#"
                   >
-                    Customer Support
+                    Whatsapp Community
                   </a>
                 </li>
               </ul>
@@ -105,21 +106,23 @@ export function Footer() {
           <div className="w-full p-6 md:w-1/2 lg:w-3/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                Legals
+                About
               </h3>
               <ul>
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    target="_blank"
+                    href="https://courses.successanalytics.in/termsofuse"
                   >
-                    Terms &amp; Conditions
+                    Terms of Use
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    target="_blank"
+                    href="https://courses.successanalytics.in/privacypolicy"
                   >
                     Privacy Policy
                   </a>
@@ -127,9 +130,10 @@ export function Footer() {
                 <li>
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    target="_blank"
+                    href="https://courses.successanalytics.in/refundpolicy"
                   >
-                    Licensing
+                    Refund Policy
                   </a>
                 </li>
               </ul>

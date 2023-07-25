@@ -30,9 +30,17 @@ const FreeCourseSection = () => {
       <ScrollAnimationWrapper className="w-full flex flex-col py-4 pb-20">
         <motion.div variants={scrollAnimation}>
           <div className="flex justify-center gap-5 flex-wrap">
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
+            <CourseCard
+              image="https://courses.successanalytics.in/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64bff7c8e4b0c90453dc8ab2%2Fcover%2F2023-07-25T16%3A28%3A53.768Z.jpg&w=1920&q=75"
+              title="Complete Book Recommendation System Project"
+              desc="Average salary of an employee who knows Recommendation System is ₹18.8lakhs."
+              resLink="https://6figr.com/in/salary/recommendation-system--s"
+              currPrice="FREE"
+              actPrice="Rs. 2000"
+              off="100"
+              link="https://courses.successanalytics.in/courses/Complete-Book-Recommendation-System-Project-64bff7c8e4b0c90453dc8ab2"
+            ></CourseCard>
+            {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
           </div>
         </motion.div>
       </ScrollAnimationWrapper>

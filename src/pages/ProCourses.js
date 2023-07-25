@@ -7,6 +7,8 @@ import ScrollAnimationWrapper from "../components/ScrollAnimationWrapper";
 import CourseCard from "../components/CourseCard";
 import { Header } from "../components/Header";
 
+import comingSoon from "../assests/comingSoon.png";
+
 const ProCourseSection = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
@@ -30,9 +32,12 @@ const ProCourseSection = () => {
       <ScrollAnimationWrapper className="w-full flex flex-col py-4 pb-20">
         <motion.div variants={scrollAnimation}>
           <div className="flex justify-center gap-5 flex-wrap">
+            {/* <CourseCard />
             <CourseCard />
-            <CourseCard />
-            <CourseCard />
+            <CourseCard /> */}
+          </div>
+          <div className="flex justify-center">
+            <img src={comingSoon} alt="coming soon" />
           </div>
         </motion.div>
       </ScrollAnimationWrapper>

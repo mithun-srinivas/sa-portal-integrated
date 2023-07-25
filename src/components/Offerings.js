@@ -6,6 +6,10 @@ import { useNavigate } from "react-router-dom";
 
 import { ArrowRight, Check } from "lucide-react";
 
+import freeCourseImage from "../assests/freecourseimage.png";
+import proCourseImage from "../assests/proCourseImage.png";
+import bundleCourseImage from "../assests/bundleImage.png";
+
 export const Offerings = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const navigate = useNavigate();
@@ -33,11 +37,11 @@ export const Offerings = () => {
               solutions to our students.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-2">
             <ScrollAnimationWrapper className="flex justify-center text-xs">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -45,10 +49,10 @@ export const Offerings = () => {
                   },
                 }}
               >
-                <div className="w-full relative">
+                <div className="p-4 lg:p-0">
                   <img
-                    src="https://sa-web-portal.vercel.app/_next/image?url=%2Fassets%2Fcustom%2Ffreecourse.png&w=1080&q=75"
-                    alt="Free Plan"
+                    src={freeCourseImage}
+                    alt="Premium Plan"
                     className="rounded-full w-40 h-40"
                   />
                 </div>
@@ -58,11 +62,11 @@ export const Offerings = () => {
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
-                    Wide Range of Topics.
+                    Expert-Led Hybrid High Quality Recorded Classes.
                   </li>
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
-                    High-Quality Recorded Content.
+                    Wide Range Of Topics.
                   </li>
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
@@ -71,6 +75,10 @@ export const Offerings = () => {
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
                     Interactive Learning Experience.
+                  </li>
+                  <li className="relative check custom-list my-2 flex gap-2 items-center">
+                    <Check color="#28d025" />
+                    Certification of completion.
                   </li>
                 </ul>
                 <div className="py-3 w-[100%]">
@@ -88,7 +96,7 @@ export const Offerings = () => {
             <ScrollAnimationWrapper className="flex justify-center text-xs">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -96,10 +104,10 @@ export const Offerings = () => {
                   },
                 }}
               >
-                <div className="w-full relative">
+                <div className="p-4 lg:p-0">
                   <img
-                    src="https://sa-web-portal.vercel.app/_next/image?url=%2Fassets%2Fcustom%2FproCourse.png&w=1080&q=75"
-                    alt="Free Plan"
+                    src={proCourseImage}
+                    alt="Premium Plan"
                     className="rounded-full w-40 h-40"
                   />
                 </div>
@@ -110,6 +118,10 @@ export const Offerings = () => {
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
                     Expert-Led Hybrid [ Live + Recorded ] Classes.
+                  </li>
+                  <li className="relative check custom-list my-2 flex gap-2 items-center">
+                    <Check color="#28d025" />
+                    Free Mentoring Sessions.
                   </li>
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
@@ -127,6 +139,10 @@ export const Offerings = () => {
                     <Check color="#28d025" />
                     Certification and Recognition.{" "}
                   </li>
+                  <li className="relative check custom-list my-2 flex gap-2 items-center">
+                    <Check color="#28d025" />
+                    Resume Building & Referrals.{" "}
+                  </li>
                 </ul>
                 <div className="py-3 w-[100%]">
                   <button
@@ -143,7 +159,7 @@ export const Offerings = () => {
             <ScrollAnimationWrapper className="flex justify-center text-xs">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -153,7 +169,7 @@ export const Offerings = () => {
               >
                 <div className="p-4 lg:p-0">
                   <img
-                    src="https://sa-web-portal.vercel.app/_next/image?url=%2Fassets%2Fcustom%2Fbundle.png&w=1080&q=75"
+                    src={bundleCourseImage}
                     alt="Premium Plan"
                     className="rounded-full w-40 h-40"
                   />
@@ -165,6 +181,10 @@ export const Offerings = () => {
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
                     Expert-Led Hybrid [ Live + Recorded ] Classes.
+                  </li>
+                  <li className="relative check custom-list my-2 flex gap-2 items-center">
+                    <Check color="#28d025" />
+                    Free Mentoring Sessions.
                   </li>
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
@@ -185,6 +205,10 @@ export const Offerings = () => {
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
                     Certification and Recognition.{" "}
+                  </li>
+                  <li className="relative check custom-list my-2 flex gap-2 items-center">
+                    <Check color="#28d025" />
+                    Resume Building & Referrals.{" "}
                   </li>
                 </ul>
                 <div className="py-3 w-[100%]">

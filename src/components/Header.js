@@ -13,6 +13,7 @@ const menuItems = [
     name: "About",
     href: "/about",
   },
+
   {
     name: "Course Bundles",
     href: "/course-bundles",
@@ -24,6 +25,10 @@ const menuItems = [
   {
     name: "Contact",
     href: "/contact",
+  },
+  {
+    name: "Free Courses",
+    href: "/free-courses",
   },
 ];
 
@@ -44,22 +49,36 @@ export function Header() {
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
-            {menuItems.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-sm font-semibold text-gray-800 hover:text-gray-900"
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
+            {menuItems.map((item) =>
+              item.name == "Free Courses" ? (
+                <li key={item.name} className="relative">
+                  <a
+                    href={item.href}
+                    className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                  >
+                    {item.name}{" "}
+                    <span className="bg-green-300 text-[10px] p-[3px] font-bold rounded relative -top-3 right-1">
+                      Trending &#x1F525;
+                    </span>
+                  </a>
+                </li>
+              ) : (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              )
+            )}
           </ul>
         </div>
 
         <div className="hidden lg:flex gap-5">
           <Link
-            to={"https://sa3051.graphy.com/t/u/activeCourses"}
+            to={"https://courses.successanalytics.in/s/dashboard"}
             target="_blank"
           >
             <button
@@ -112,7 +131,7 @@ export function Header() {
 
                 <div>
                   <Link
-                    to={"https://sa3051.graphy.com/t/u/activeCourses"}
+                    to={"https://courses.successanalytics.in/s/dashboard"}
                     target="_blank"
                   >
                     <button
