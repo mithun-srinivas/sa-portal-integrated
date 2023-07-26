@@ -34,7 +34,7 @@ const CourseCard = ({
               </span>
             </h1>
           </div>
-          <Link to={link}>
+          <Link to={link} target="_blank">
             <button
               type="button"
               // onClick={() => router.push("/courseDetails")}
