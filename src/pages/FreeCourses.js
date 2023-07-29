@@ -40,6 +40,16 @@ const FreeCourseSection = () => {
               off="100"
               link="https://courses.successanalytics.in/courses/Complete-Book-Recommendation-System-Project-64bff7c8e4b0c90453dc8ab2"
             ></CourseCard>
+            <CourseCard
+              image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64c095fce4b0ead932e6670e/64c095fce4b0ead932e6670e_scaled_cover.jpg?v=1"
+              title="Real-World Machine Learning Project."
+              desc="Average salary of Machine Learning Engineer in India is ₹6.2 lakhs."
+              resLink="https://www.ambitionbox.com/profile/machine-learning-engineer-salary"
+              currPrice="FREE"
+              actPrice="Rs. 2000"
+              off="100"
+              link="https://successanalytics.graphy.com/courses/Machine-Learning-Project-64c095fce4b0ead932e6670e"
+            ></CourseCard>
             {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
           </div>
         </motion.div>

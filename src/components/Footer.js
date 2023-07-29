@@ -51,12 +51,21 @@ export function Footer() {
                     Product
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     href="/contact"
                   >
                     Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                    href="https://webinar.successanalytics.in/"
+                    target="_blank"
+                  >
+                    Webinar
                   </a>
                 </li>
               </ul>

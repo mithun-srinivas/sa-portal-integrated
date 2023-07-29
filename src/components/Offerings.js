@@ -143,6 +143,10 @@ export const Offerings = () => {
                     <Check color="#28d025" />
                     Resume Building & Referrals.{" "}
                   </li>
+                  <li className="relative check custom-list my-2 flex gap-2 items-center">
+                    <Check color="#28d025" />
+                    Job Notifications.{" "}
+                  </li>
                 </ul>
                 <div className="py-3 w-[100%]">
                   <button
@@ -209,6 +213,10 @@ export const Offerings = () => {
                   <li className="relative check custom-list my-2 flex gap-2 items-center">
                     <Check color="#28d025" />
                     Resume Building & Referrals.{" "}
+                  </li>
+                  <li className="relative check custom-list my-2 flex gap-2 items-center">
+                    <Check color="#28d025" />
+                    Job Notifications.{" "}
                   </li>
                 </ul>
                 <div className="py-3 w-[100%]">
