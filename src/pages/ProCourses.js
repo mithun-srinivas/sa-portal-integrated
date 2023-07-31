@@ -38,9 +38,6 @@ const ProCourseSection = () => {
       <ScrollAnimationWrapper className="w-full flex flex-col py-4 pb-20">
         <motion.div variants={scrollAnimation}>
           <div className="flex justify-center gap-5 flex-wrap">
-            {/* <CourseCard />
-            <CourseCard />
-            <CourseCard /> */}
             <CourseCard
               image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64c67e14e4b0ec2585efb130/64c67e14e4b0ec2585efb130_scaled_cover.jpg?v=1"
               title="Building an Online Retailer Segmentation Project"
