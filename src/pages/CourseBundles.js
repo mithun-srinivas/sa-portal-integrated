@@ -36,10 +36,20 @@ const CourseBundles = () => {
             <CourseCard />
             <CourseCard /> */}
             {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
+            <CourseCard
+              image="https://courses.successanalytics.in/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64c78b99e4b0537c222335f2%2Fcover%2F2023-07-31T10%3A23%3A39.828Z.jpg&w=1920&q=75"
+              title="Ultimate Course Bundle Data Science Projects"
+              desc="Average salary of an employee who knows Data Science is ₹13lakhs."
+              resLink="https://www.glassdoor.co.in/Salaries/data-scientist-salary-SRCH_KO0,14.htm"
+              currPrice="Rs. 4000"
+              actPrice="Rs. 8000"
+              off="50"
+              link="https://courses.successanalytics.in/courses/Ultimate-Course-Bundle-Data-Science-Projects-64c78b99e4b0537c222335f2-64c78b99e4b0537c222335f2"
+            ></CourseCard>
           </div>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <img src={comingSoon} alt="coming soon" />
-          </div>
+          </div> */}
         </motion.div>
       </ScrollAnimationWrapper>
     </>

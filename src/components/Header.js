@@ -54,7 +54,7 @@ export function Header() {
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) =>
-              item.name == "Pro Courses" ? (
+              item.name == "Pro Courses" || item.name == "Course Bundles" ? (
                 <li key={item.name} className="relative">
                   <a
                     href={item.href}
