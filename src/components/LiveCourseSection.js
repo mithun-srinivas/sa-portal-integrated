@@ -34,10 +34,20 @@ const LiveCourseSection = () => {
             <CourseCard />
             <CourseCard /> */}
             {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
+            <CourseCard
+              image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64c237a5e4b03fc7fc323a8a/64c237a5e4b03fc7fc323a8a_scaled_cover.jpg?v=1"
+              title="NLP (Natural Language Processing) Bootcamp"
+              desc="Average salary of an employee who knows NLP is ₹8lakhs."
+              resLink="https://www.ambitionbox.com/profile/nlp-engineer-salary"
+              currPrice="Rs. 4000"
+              actPrice="Rs. 8000"
+              off="50"
+              link="https://courses.successanalytics.in/courses/NLP-Natural-Language-Processing-Bootcamp-64c237a5e4b03fc7fc323a8a-64c237a5e4b03fc7fc323a8a"
+            ></CourseCard>
           </div>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <img src={comingSoon} alt="coming soon" />
-          </div>
+          </div> */}
         </motion.div>
       </ScrollAnimationWrapper>
     </>
