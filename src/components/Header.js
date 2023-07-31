@@ -30,6 +30,10 @@ const menuItems = [
     name: "Free Courses",
     href: "/free-courses",
   },
+  {
+    name: "Pro Courses",
+    href: "/pro-courses",
+  },
 ];
 
 export function Header() {
@@ -50,7 +54,7 @@ export function Header() {
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) =>
-              item.name == "Free Courses" ? (
+              item.name == "Pro Courses" ? (
                 <li key={item.name} className="relative">
                   <a
                     href={item.href}
