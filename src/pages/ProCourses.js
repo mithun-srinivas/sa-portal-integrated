@@ -13,6 +13,12 @@ const ProCourseSection = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <>
+      <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
+        <h5 className="text-center font-semibold">
+          Ready, set, save! Get a massive 10% off with code 'SA100' on all our
+          course bundles! ! 📈💯{" "}
+        </h5>
+      </div>
       <Header />
       <ScrollAnimationWrapper>
         <motion.h3
