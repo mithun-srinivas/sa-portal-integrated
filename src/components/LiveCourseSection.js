@@ -35,7 +35,7 @@ const LiveCourseSection = () => {
             <CourseCard /> */}
             {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
             <CourseCard
-              image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64c237a5e4b03fc7fc323a8a/64c237a5e4b03fc7fc323a8a_scaled_cover.jpg?v=1"
+              image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64c237a5e4b03fc7fc323a8a/cover/2023-08-03T14:37:55.533Z.jpg"
               title="NLP (Natural Language Processing) Bootcamp"
               desc="Average salary of an employee who knows NLP is ₹8lakhs."
               resLink="https://www.ambitionbox.com/profile/nlp-engineer-salary"
