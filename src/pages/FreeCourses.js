@@ -13,7 +13,7 @@ const FreeCourseSection = () => {
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
         <h5 className="text-center font-semibold">
-          🎓 This Independence Day, empower yourself with knowledge! Use promo code "SA010" for a 10% discount on all our courses 📈💯{" "}
+          🎓 This Independence Day, Use promo code "SA010" for a 15% discount on all our courses 📈
         </h5>
       </div>
       <Header />
