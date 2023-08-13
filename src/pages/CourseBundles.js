@@ -46,9 +46,9 @@ const CourseBundles = () => {
               title="Ultimate Course Bundle Data Science Projects"
               desc="Average salary of an employee who knows Data Science is ₹13lakhs."
               resLink="https://www.glassdoor.co.in/Salaries/data-scientist-salary-SRCH_KO0,14.htm"
-              currPrice="Rs. 3999"
-              actPrice="Rs. 8000"
-              off="50"
+              currPrice="Rs. 3399"
+              actPrice="Rs. 5000"
+              off="32"
               link="https://courses.successanalytics.in/courses/Ultimate-Course-Bundle-Data-Science-Projects-64c78b99e4b0537c222335f2-64c78b99e4b0537c222335f2"
             ></CourseCard>
           </div>
