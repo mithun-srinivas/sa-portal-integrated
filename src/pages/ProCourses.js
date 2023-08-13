@@ -15,8 +15,7 @@ const ProCourseSection = () => {
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
         <h5 className="text-center font-semibold">
-          Ready, set, save! Get a massive 10% off with code 'SA100' on all our
-          course bundles! ! 📈💯{" "}
+          🎓 This Independence Day, empower yourself with knowledge! Use promo code "SA010" for a 10% discount on all our courses 📈💯{" "}
         </h5>
       </div>
       <Header />
@@ -36,6 +35,16 @@ const ProCourseSection = () => {
         </motion.p>
       </ScrollAnimationWrapper>
       <div className="flex justify-center gap-5 flex-wrap">
+        <CourseCard
+          image="https://courses.successanalytics.in/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64d7c380e4b0a39e912c3ee0%2Fcover%2F2023-08-13T04%3A18%3A48.652Z.jpg&w=1920&q=75"
+          title="Mastery in Python Modular Coding Zero to Hero"
+          desc="Employees who knows Python Modular Coding earn an average of ₹17lakhs."
+          resLink="https://www.upgrad.com/blog/python-developer-salary-india-freshers-experienced/"
+          currPrice="Rs. 799"
+          actPrice="Rs. 2000"
+          off="60"
+          link="https://successanalytics.graphy.com/courses/Mastery-in-Python-Modular-Coding-Zero-to-Hero-64d7c380e4b0a39e912c3ee0-64d7c380e4b0a39e912c3ee0"
+        ></CourseCard>
         <CourseCard
           image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64c67e14e4b0ec2585efb130/64c67e14e4b0ec2585efb130_scaled_cover.jpg?v=1"
           title="Building an Online Retailer Segmentation Project"

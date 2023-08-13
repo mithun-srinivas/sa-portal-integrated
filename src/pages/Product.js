@@ -6,8 +6,7 @@ export function Product() {
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
         <h5 className="text-center font-semibold">
-          Ready, set, save! Get a massive 10% off with code 'SA100' on all our
-          course bundles! ! 📈💯{" "}
+          🎓 This Independence Day, empower yourself with knowledge! Use promo code "SA010" for a 10% discount on all our courses 📈💯{" "}
         </h5>
       </div>
       <Header />

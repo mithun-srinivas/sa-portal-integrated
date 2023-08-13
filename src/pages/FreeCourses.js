@@ -13,8 +13,7 @@ const FreeCourseSection = () => {
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
         <h5 className="text-center font-semibold">
-          Ready, set, save! Get a massive 10% off with code 'SA100' on all our
-          course bundles! ! 📈💯{" "}
+          🎓 This Independence Day, empower yourself with knowledge! Use promo code "SA010" for a 10% discount on all our courses 📈💯{" "}
         </h5>
       </div>
       <Header />
@@ -36,6 +35,16 @@ const FreeCourseSection = () => {
       <ScrollAnimationWrapper className="w-full flex flex-col py-4 pb-20">
         <motion.div variants={scrollAnimation}>
           <div className="flex justify-center gap-5 flex-wrap">
+            <CourseCard
+              image="https://courses.successanalytics.in/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64d5b3ffe4b09357eb8863d5%2Fcover%2F2023-08-13T04%3A29%3A54.924Z.jpg&w=1920&q=75"
+              title="Job Search Program ( Data Science / Data Analytics / Big Data )"
+              desc="Complete Job Search Program"
+              resLink="https://successanalytics.graphy.com/courses/Job-Search-Program--Data-Science--Data-Analytics--Big-Data--64d5b3ffe4b09357eb8863d5-64d5b3ffe4b09357eb8863d5"
+              currPrice="FREE"
+              actPrice="Rs. 2000"
+              off="100"
+              link="https://successanalytics.graphy.com/courses/Job-Search-Program--Data-Science--Data-Analytics--Big-Data--64d5b3ffe4b09357eb8863d5-64d5b3ffe4b09357eb8863d5"
+            ></CourseCard>
             <CourseCard
               image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64bff7c8e4b0c90453dc8ab2/64bff7c8e4b0c90453dc8ab2_scaled_cover.jpg?v=2"
               title="Complete Book Recommendation System Project"
