@@ -40,9 +40,9 @@ const ProCourseSection = () => {
           title="Mastery in Python Modular Coding Zero to Hero"
           desc="Employees who knows Python Modular Coding earn an average of ₹17lakhs."
           resLink="https://www.upgrad.com/blog/python-developer-salary-india-freshers-experienced/"
-          currPrice="Rs. 799"
-          actPrice="Rs. 2000"
-          off="60"
+          currPrice="Rs. 680"
+          actPrice="Rs. 799"
+          off="15"
           link="https://successanalytics.graphy.com/courses/Mastery-in-Python-Modular-Coding-Zero-to-Hero-64d7c380e4b0a39e912c3ee0-64d7c380e4b0a39e912c3ee0"
         ></CourseCard>
         <CourseCard
@@ -50,9 +50,9 @@ const ProCourseSection = () => {
           title="Building an Online Retailer Segmentation Project"
           desc="Employees who knows Market Segmentation earn an average of ₹21.8lakhs."
           resLink="https://6figr.com/in/salary/market-segmentation--s"
-          currPrice="Rs. 499"
-          actPrice="Rs. 2000"
-          off="75"
+          currPrice="Rs. 424"
+          actPrice="Rs. 499"
+          off="15"
           link="https://courses.successanalytics.in/courses/Machine-Learning-for-E-commerce-Building-an-Online-Retailer-Segmentation-Project-64c67e14e4b0ec2585efb130-64c67e14e4b0ec2585efb130"
         ></CourseCard>
         <CourseCard
@@ -60,9 +60,9 @@ const ProCourseSection = () => {
           title="Building Your Own Text to Speech System: Hands-On Project"
           desc="Employees who knows TTS earn an average of ₹20lakhs."
           resLink="https://www.ambitionbox.com/profile/tts-employ-salary"
-          currPrice="Rs. 499"
-          actPrice="Rs. 2000"
-          off="75"
+          currPrice="Rs. 424"
+          actPrice="Rs. 499"
+          off="15"
           link="https://courses.successanalytics.in/courses/Building-Your-Own-Text-to-Speech-System-Hands-On-Project-64c67da8e4b0ec2585efb11f"
         ></CourseCard>
         <CourseCard
@@ -70,9 +70,9 @@ const ProCourseSection = () => {
           title="Building Intelligent Systems Using Visdum AI"
           desc="Employees who knows Visdum AI earn an average of ₹11lakhs."
           resLink="https://www.glassdoor.co.in/Salaries/ai-engineer-salary-SRCH_KO0,11.htm"
-          currPrice="Rs. 499"
-          actPrice="Rs. 2000"
-          off="75"
+          currPrice="Rs. 424"
+          actPrice="Rs. 499"
+          off="15"
           link="https://courses.successanalytics.in/courses/Building-Intelligent-Systems-Using-Visdum-AI-64c5198fe4b082a06d080761-64c5198fe4b082a06d080761"
         ></CourseCard>
         <CourseCard
@@ -80,9 +80,9 @@ const ProCourseSection = () => {
           title="Fine-tuned Text Summarization Using PyTorch"
           desc="Employees who knows PyTorch earn an average of ₹23.5lakhs."
           resLink="https://6figr.com/in/salary/pytorch--s"
-          currPrice="Rs. 499"
-          actPrice="Rs. 2000"
-          off="75"
+          currPrice="Rs. 424"
+          actPrice="Rs. 499"
+          off="15"
           link="https://courses.successanalytics.in/courses/Building-Intelligent-Systems-Using-Visdum-AI-64c5198fe4b082a06d080761-64c5198fe4b082a06d080761"
         ></CourseCard>
       </div>
