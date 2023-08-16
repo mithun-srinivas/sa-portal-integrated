@@ -39,9 +39,9 @@ const LiveCourseSection = () => {
               title="NLP (Natural Language Processing) Bootcamp"
               desc="Average salary of an employee who knows NLP is ₹8lakhs."
               resLink="https://www.ambitionbox.com/profile/nlp-engineer-salary"
-              currPrice="Rs. 3399"
-              actPrice="Rs. 4000"
-              off="15"
+              currPrice="Rs. 3999"
+              actPrice="Rs. 5000"
+              off="20"
               link="https://courses.successanalytics.in/courses/NLP-Natural-Language-Processing-Bootcamp-64c237a5e4b03fc7fc323a8a-64c237a5e4b03fc7fc323a8a"
             ></CourseCard>
           </div>
