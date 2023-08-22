@@ -6,7 +6,7 @@ export function Product() {
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
         <h5 className="text-center font-semibold">
-          🎓 This Independence Day, Use promo code "SA010" for a 15% discount on all our courses 📈
+          Unlock 10% instant savings on course bundles with code 'SA100'! 📈
         </h5>
       </div>
       <Header />
