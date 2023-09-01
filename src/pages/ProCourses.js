@@ -35,16 +35,7 @@ const ProCourseSection = () => {
         </motion.p>
       </ScrollAnimationWrapper>
       <div className="flex justify-center gap-5 flex-wrap">
-        <CourseCard
-          image="https://successanalytics.graphy.com/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64d4829ee4b076174b19a519%2Fcover%2F2023-09-01T13%3A10%3A55.743Z.jpg&w=1920&q=75"
-          title="Machine Learning Project Bootcamp [ Live Coding ]"
-          desc="Employees who knows Machine Learning earn an average of ₹36.4lakhs."
-          resLink="https://6figr.com/in/salary/machine-learning-engineer--t"
-          currPrice="Rs. 2500"
-          actPrice="Rs. 5000"
-          off="50"
-          link="https://courses.successanalytics.in/courses/Machine-Learning-Project-Bootcamp--Live-Coding--64d4829ee4b076174b19a519"
-        ></CourseCard>
+
         <CourseCard
           image="https://courses.successanalytics.in/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64d7c380e4b0a39e912c3ee0%2Fcover%2F2023-08-13T04%3A18%3A48.652Z.jpg&w=1920&q=75"
           title="Mastery in Python Modular Coding Zero to Hero"
