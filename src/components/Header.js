@@ -9,23 +9,20 @@ const menuItems = [
     name: "Home",
     href: "/",
   },
-  {
-    name: "About",
-    href: "/about",
-  },
+  // {
+  //   name: "About",
+  //   href: "/about",
+  // },
 
-  {
-    name: "Course Bundles",
-    href: "/course-bundles",
-  },
+
   {
     name: "Product",
     href: "/product",
   },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   name: "Contact",
+  //   href: "/contact",
+  // },
   {
     name: "Free Courses",
     href: "/free-courses",
@@ -33,6 +30,10 @@ const menuItems = [
   {
     name: "Pro Courses",
     href: "/pro-courses",
+  },
+  {
+    name: "Course Bundles",
+    href: "/course-bundles",
   },
 ];
 

@@ -10,7 +10,10 @@ export function Footer() {
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
             <div className="flex h-full flex-col justify-between">
               <div className="mb-4 inline-flex items-center">
-                <img src={logo} alt="Logo" className="w-32" />
+                <img src={logo} alt="Logo" className="w-20" />
+              </div>
+              <div>
+                <p>Our platform offers interactive tools, social learning features, and the flexibility to learn at your own pace, making education accessible to everyone.</p>
               </div>
               <div>
                 <p className="mb-4  text-base font-medium">Success Analytics</p>
