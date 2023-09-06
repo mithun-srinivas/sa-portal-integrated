@@ -125,7 +125,7 @@ const ProCourseSection = () => {
           allCourses.map(data => <CourseCard
             image={data.thumbnail}
             title={data.course_name}
-            desc={data.info_test}
+            desc={data.info_text}
             resLink={data.info_link}
             currPrice={`Rs. ${data.selling_price}`}
             actPrice={data.actual_price}
