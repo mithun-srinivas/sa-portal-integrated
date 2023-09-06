@@ -1,15 +1,33 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
 
 import getScrollAnimation from "./getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 import CourseCard from "./CourseCard";
-
+import useGoogleSheets from 'use-google-sheets';
 import comingSoon from "../assests/comingSoon.png";
 
 const LiveCourseSection = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
+  const [allCourses, setAllCourses] = useState([])
+
+  const { data, loading, error } = useGoogleSheets({
+    apiKey: 'AIzaSyBb4-zdnRTJyJIcXKh8sdkFK-HX7uSL3P0',
+    sheetId: '1LW0ltz_brJTuvJLjKCt-W23qJboxrHd8_8Yd1gwBOBs',
+  });
+
+  useEffect(() => {
+    console.log(data);
+    async function getData() {
+      if (data[3]) {
+        setAllCourses(data[3].data)
+      }
+    }
+    getData()
+  }, [data])
+
   return (
     <>
       <ScrollAnimationWrapper>
@@ -34,7 +52,7 @@ const LiveCourseSection = () => {
             <CourseCard />
             <CourseCard /> */}
             {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
-            <CourseCard
+            {/* <CourseCard
               image="https://successanalytics.graphy.com/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64d4829ee4b076174b19a519%2Fcover%2F2023-09-01T13%3A10%3A55.743Z.jpg&w=1920&q=75"
               title="Machine Learning Project Bootcamp [ Live Coding ]"
               desc="Employees who knows Machine Learning earn an average of ₹36.4lakhs."
@@ -53,7 +71,21 @@ const LiveCourseSection = () => {
               actPrice="Rs. 5000"
               off="20"
               link="https://courses.successanalytics.in/courses/NLP-Natural-Language-Processing-Bootcamp-64c237a5e4b03fc7fc323a8a-64c237a5e4b03fc7fc323a8a"
-            ></CourseCard>
+            ></CourseCard> */}
+
+            {
+              allCourses.map(data => <CourseCard
+                image={data.thumbnail}
+                title={data.course_name}
+                desc={data.info_text}
+                resLink={data.info_link}
+                currPrice={`Rs. ${data.selling_price}`}
+                actPrice={data.actual_price}
+                off={data.discount}
+                link={data.graphy_link}
+              ></CourseCard>)
+            }
+
           </div>
           {/* <div className="flex justify-center">
             <img src={comingSoon} alt="coming soon" />

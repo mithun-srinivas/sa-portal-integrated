@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 
@@ -7,8 +7,30 @@ import ScrollAnimationWrapper from "../components/ScrollAnimationWrapper";
 import CourseCard from "../components/CourseCard";
 import { Header } from "../components/Header";
 
+import useGoogleSheets from 'use-google-sheets';
+import { Bars } from 'react-loader-spinner'
+
 const FreeCourseSection = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
+  const [allCourses, setAllCourses] = useState([])
+
+  const { data, loading, error } = useGoogleSheets({
+    apiKey: 'AIzaSyBb4-zdnRTJyJIcXKh8sdkFK-HX7uSL3P0',
+    sheetId: '1LW0ltz_brJTuvJLjKCt-W23qJboxrHd8_8Yd1gwBOBs',
+  });
+
+  useEffect(() => {
+    console.log(data);
+    async function getData() {
+      if (data[1]) {
+        setAllCourses(data[1].data)
+      }
+    }
+    getData()
+  }, [data])
+
+
   return (
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
@@ -33,7 +55,7 @@ const FreeCourseSection = () => {
         </motion.p>
       </ScrollAnimationWrapper>
       <div className="flex justify-center gap-5 flex-wrap">
-        <CourseCard
+        {/* <CourseCard
           image="https://courses.successanalytics.in/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64d5b3ffe4b09357eb8863d5%2Fcover%2F2023-08-13T04%3A29%3A54.924Z.jpg&w=1920&q=75"
           title="Job Search Program ( Data Science / Data Analytics / Big Data )"
           desc="Complete Job Search Program"
@@ -62,7 +84,34 @@ const FreeCourseSection = () => {
           actPrice="Rs. 2000"
           off="100"
           link="https://successanalytics.graphy.com/courses/Machine-Learning-Project-64c095fce4b0ead932e6670e"
-        ></CourseCard>
+        ></CourseCard> */}
+
+        {
+          loading ?
+
+            <Bars
+              height="80"
+              width="80"
+              color="#001732"
+              ariaLabel="bars-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+            /> : <></>
+        }
+
+        {
+          allCourses.map(data => <CourseCard
+            image={data.thumbnail}
+            title={data.course_name}
+            desc={data.info_text}
+            resLink={data.info_link}
+            currPrice={`Rs. ${data.selling_price}`}
+            actPrice={data.actual_price}
+            off={data.discount}
+            link={data.graphy_link}
+          ></CourseCard>)
+        }
         {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
       </div>
     </>

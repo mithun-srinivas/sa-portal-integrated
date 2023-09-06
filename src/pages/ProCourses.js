@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import { motion } from "framer-motion";
 
@@ -7,10 +7,30 @@ import ScrollAnimationWrapper from "../components/ScrollAnimationWrapper";
 import CourseCard from "../components/CourseCard";
 import { Header } from "../components/Header";
 
-// import comingSoon from "../assests/comingSoon.png";
+import useGoogleSheets from 'use-google-sheets';
+import { Bars } from 'react-loader-spinner'
+
 
 const ProCourseSection = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
+  const [allCourses, setAllCourses] = useState([])
+
+  const { data, loading, error } = useGoogleSheets({
+    apiKey: 'AIzaSyBb4-zdnRTJyJIcXKh8sdkFK-HX7uSL3P0',
+    sheetId: '1LW0ltz_brJTuvJLjKCt-W23qJboxrHd8_8Yd1gwBOBs',
+  });
+
+  useEffect(() => {
+    console.log(data);
+    async function getData() {
+      if (data[0]) {
+        setAllCourses(data[0].data)
+      }
+    }
+    getData()
+  }, [data])
+
   return (
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
@@ -36,7 +56,7 @@ const ProCourseSection = () => {
       </ScrollAnimationWrapper>
       <div className="flex justify-center gap-5 flex-wrap">
 
-        <CourseCard
+        {/* <CourseCard
           image="https://courses.successanalytics.in/_next/image?url=https%3A%2F%2Fdz8fbjd9gwp2s.cloudfront.net%2Fcourses%2F64d7c380e4b0a39e912c3ee0%2Fcover%2F2023-08-13T04%3A18%3A48.652Z.jpg&w=1920&q=75"
           title="Mastery in Python Modular Coding Zero to Hero"
           desc="Employees who knows Python Modular Coding earn an average of ₹17lakhs."
@@ -75,8 +95,8 @@ const ProCourseSection = () => {
           actPrice="Rs. 2000"
           off="75"
           link="https://courses.successanalytics.in/courses/Building-Intelligent-Systems-Using-Visdum-AI-64c5198fe4b082a06d080761-64c5198fe4b082a06d080761"
-        ></CourseCard>
-        <CourseCard
+        ></CourseCard> */}
+        {/* <CourseCard
           image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64c50ea7e4b029299830813a/64c50ea7e4b029299830813a_scaled_cover.jpg?v=1"
           title="Fine-tuned Text Summarization Using PyTorch"
           desc="Employees who knows PyTorch earn an average of ₹23.5lakhs."
@@ -85,7 +105,35 @@ const ProCourseSection = () => {
           actPrice="Rs. 2000"
           off="75"
           link="https://courses.successanalytics.in/courses/Building-Intelligent-Systems-Using-Visdum-AI-64c5198fe4b082a06d080761-64c5198fe4b082a06d080761"
-        ></CourseCard>
+        ></CourseCard> */}
+
+        {
+          loading ?
+
+            <Bars
+              height="80"
+              width="80"
+              color="#001732"
+              ariaLabel="bars-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+            /> : <></>
+        }
+
+        {
+          allCourses.map(data => <CourseCard
+            image={data.thumbnail}
+            title={data.course_name}
+            desc={data.info_test}
+            resLink={data.info_link}
+            currPrice={`Rs. ${data.selling_price}`}
+            actPrice={data.actual_price}
+            off={data.discount}
+            link={data.graphy_link}
+          ></CourseCard>)
+        }
+
       </div>
       {/* <div className="flex justify-center">
             <img src={comingSoon} alt="coming soon" />

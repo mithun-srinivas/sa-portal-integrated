@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 
@@ -9,8 +9,29 @@ import { Header } from "../components/Header";
 
 import comingSoon from "../assests/comingSoon.png";
 
+import useGoogleSheets from 'use-google-sheets';
+import { Bars } from 'react-loader-spinner'
+
 const CourseBundles = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
+  const [allCourses, setAllCourses] = useState([])
+
+  const { data, loading, error } = useGoogleSheets({
+    apiKey: 'AIzaSyBb4-zdnRTJyJIcXKh8sdkFK-HX7uSL3P0',
+    sheetId: '1LW0ltz_brJTuvJLjKCt-W23qJboxrHd8_8Yd1gwBOBs',
+  });
+
+  useEffect(() => {
+    console.log(data);
+    async function getData() {
+      if (data[1]) {
+        setAllCourses(data[2].data)
+      }
+    }
+    getData()
+  }, [data])
+
   return (
     <>
       <div className="bg-green-300 p-2 rounded-lg mb-0 m-2">
@@ -41,7 +62,7 @@ const CourseBundles = () => {
             <CourseCard />
             <CourseCard /> */}
             {/* <h1 className="text-3xl font-bold">Coming Soon....</h1> */}
-            <CourseCard
+            {/* <CourseCard
               image="https://dz8fbjd9gwp2s.cloudfront.net/courses/64f5e9b4e4b0942b12d3b507/cover/2023-09-05T05:36:09.129Z.jpg"
               title="Ultimate Course Bundle + Live Classes"
               desc="Average salary of an employee who knows Data Science is ₹13lakhs."
@@ -60,7 +81,35 @@ const CourseBundles = () => {
               actPrice="Rs. 5000"
               off="20"
               link="https://courses.successanalytics.in/courses/Ultimate-Course-Bundle-Data-Science-Projects-64c78b99e4b0537c222335f2-64c78b99e4b0537c222335f2"
-            ></CourseCard>
+            ></CourseCard> */}
+
+            {
+              loading ?
+
+                <Bars
+                  height="80"
+                  width="80"
+                  color="#001732"
+                  ariaLabel="bars-loading"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                  visible={true}
+                /> : <></>
+            }
+
+            {
+              allCourses.map(data => <CourseCard
+                image={data.thumbnail}
+                title={data.course_name}
+                desc={data.info_test}
+                resLink={data.info_link}
+                currPrice={`Rs. ${data.selling_price}`}
+                actPrice={data.actual_price}
+                off={data.discount}
+                link={data.graphy_link}
+              ></CourseCard>)
+            }
+
           </div>
           {/* <div className="flex justify-center">
             <img src={comingSoon} alt="coming soon" />
