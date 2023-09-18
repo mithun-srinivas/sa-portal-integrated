@@ -29,7 +29,7 @@ const LiveCourseSection = () => {
   }, [data])
 
   return (
-    <>
+    <div id="live-courses">
       <ScrollAnimationWrapper>
         <motion.h3
           variants={scrollAnimation}
@@ -47,7 +47,7 @@ const LiveCourseSection = () => {
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper className="w-full flex flex-col py-4 pb-20">
         <motion.div variants={scrollAnimation}>
-          <div className="flex justify-center gap-5 flex-wrap">
+          <div className="flex justify-center gap-5 flex-wrap" >
             {/* <CourseCard />
             <CourseCard />
             <CourseCard /> */}
@@ -92,7 +92,7 @@ const LiveCourseSection = () => {
           </div> */}
         </motion.div>
       </ScrollAnimationWrapper>
-    </>
+    </div>
   );
 };
 
