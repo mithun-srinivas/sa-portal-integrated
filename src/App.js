@@ -7,6 +7,7 @@ import CourseBundles from "./pages/CourseBundles";
 import { About } from "./pages/About";
 import { Product } from "./pages/Product";
 import { Contact } from "./pages/Contact";
+import Affiliate from "./pages/Affiliate";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/affiliate",
+    element: <Affiliate />,
   },
 ]);
 
