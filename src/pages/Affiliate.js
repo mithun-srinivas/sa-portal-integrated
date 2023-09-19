@@ -215,6 +215,7 @@ const Affiliate = () => {
                                                     type="text"
                                                     name='Name'
                                                     placeholder="Enter Your Name"
+                                                    required
                                                 ></input>
                                             </div>
                                         </div>
@@ -232,6 +233,7 @@ const Affiliate = () => {
                                                     type="email"
                                                     name='Email'
                                                     placeholder="Enter Your Email"
+                                                    required
                                                 ></input>
                                             </div>
                                         </div>
