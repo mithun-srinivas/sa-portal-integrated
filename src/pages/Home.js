@@ -8,6 +8,9 @@ import { Footer } from "../components/Footer";
 import LiveCourseSection from "../components/LiveCourseSection";
 import { Helmet } from "react-helmet";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Home = () => {
   return (
     <>
@@ -71,6 +74,7 @@ const Home = () => {
         </h5>
       </div>
       <Header />
+      <ToastContainer />
       <Hero />
       <Features />
       <Offerings />

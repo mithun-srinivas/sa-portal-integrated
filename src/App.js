@@ -9,6 +9,8 @@ import { Product } from "./pages/Product";
 import { Contact } from "./pages/Contact";
 import Affiliate from "./pages/Affiliate";
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",

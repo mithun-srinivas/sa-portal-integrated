@@ -6,12 +6,16 @@ import { Helmet } from "react-helmet";
 import { ArrowRight } from 'lucide-react'
 import { Footer } from '../components/Footer';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Affiliate = () => {
+    const notify = () => toast.success("Form Submitted Successfully !!");
     return (
         <>
             <div>
                 <Helmet>
-                    <title>Success Analytics | Contact</title>
+                    <title>Success Analytics | Affiliate</title>
                     <link rel="icon" href={"../assests/SALOGO.png"} />
 
                     <meta name="keywords" content="Best courses for data science" />
@@ -70,6 +74,7 @@ const Affiliate = () => {
                     </h5>
                 </div>
                 <Header />
+                <ToastContainer />
                 <section className='m-10 max-w-7xl flex justify-center mx-auto w-full'>
                     <div className="grid grid-cols-1 lg:grid-cols-2 mx-10">
                         <div className="relative flex items-end px-4 pb-10 pt-60 sm:px-6 sm:pb-16 md:justify-center lg:px-8 lg:pb-24">
@@ -233,6 +238,7 @@ const Affiliate = () => {
                                         <div>
                                             <button
                                                 type="submit"
+                                                onClick={notify}
                                                 className="inline-flex w-full items-center justify-center rounded-md bg-[#001732] px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-[#001732]/80"
                                             >
                                                 Start Earning<ArrowRight className="ml-2" size={16} />
@@ -244,9 +250,9 @@ const Affiliate = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section >
                 <Footer />
-            </div>
+            </div >
         </>
     )
 }
